@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for COUNT in {1..100}
+do
+    scrapy crawl yp_dentists_spider -a page_id=$COUNT
+done

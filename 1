@@ -1,0 +1,145 @@
+2018-02-26 16:19:01 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: web_scraper)
+2018-02-26 16:19:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Darwin-16.5.0-x86_64-i386-64bit
+2018-02-26 16:19:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'web_scraper', 'NEWSPIDER_MODULE': 'web_scraper.spiders', 'SPIDER_MODULES': ['web_scraper.spiders'], 'USER_AGENT': 'bizzconnect (http://bizzconnect.com)'}
+2018-02-26 16:19:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-02-26 16:19:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-26 16:19:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-26 16:19:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-02-26 16:19:03 [scrapy.core.engine] INFO: Spider opened
+2018-02-26 16:19:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-26 16:19:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-26 16:19:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2> (referer: None)
+2018-02-26 16:19:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/vernon-family-dental-478665511?lid=478665511> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/vernon-family-dental-478665511?lid=478665511>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/vernon-family-dental-478665511?lid=478665511', 'business name': ['Vernon Family Dental'], 'street': '968 W Vernon Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90037', 'phone': '(323) 234-4889', 'accepted insurance': 'Vernon Family Dental has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/cobb-rodney-l-dds-480701365?lid=480701365> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/best-family-dentist-478639094?lid=478639094> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/gonzales-pedro-l-dmd-452240865?lid=452240865> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/mkrtchyan-silva-dds-480688243?lid=480688243> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/cobb-rodney-l-dds-480701365?lid=480701365>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/cobb-rodney-l-dds-480701365?lid=480701365', 'business name': ['Cobb, Rodney L, DDS'], 'street': '5830 Overhill Dr Ste 1, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90043', 'phone': '(323) 294-5149', 'accepted insurance': None}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/best-family-dentist-478639094?lid=478639094>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/best-family-dentist-478639094?lid=478639094', 'business name': ['Best Family Dentist'], 'street': '5522 N Figueroa St, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90042', 'phone': '(323) 254-2500', 'accepted insurance': None}
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/one-dental-specialties-466836249?lid=466836249> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/dr-bonnie-k-krystal-dds-463556504?lid=463556504> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/gonzales-pedro-l-dmd-452240865?lid=452240865>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/gonzales-pedro-l-dmd-452240865?lid=452240865', 'business name': ['Gonzales, Pedro L., DMD'], 'street': '1127 Wilshire Blvd Ste 903, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90017', 'phone': '(213) 481-1155', 'accepted insurance': 'Gonzales, Pedro L., DMD has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/mkrtchyan-silva-dds-480688243?lid=480688243>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/mkrtchyan-silva-dds-480688243?lid=480688243', 'business name': ['Mkrtchyan, Silva DDS'], 'street': '3171 Glendale Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90039', 'phone': '(323) 663-3122', 'accepted insurance': 'Mkrtchyan, Silva DDS has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/one-dental-specialties-466836249?lid=466836249>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/one-dental-specialties-466836249?lid=466836249', 'business name': ['One Dental Specialties'], 'street': '621 S Western Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90005', 'phone': '(213) 381-2828', 'accepted insurance': 'One Dental Specialties has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/dr-bonnie-k-krystal-dds-463556504?lid=463556504>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/dr-bonnie-k-krystal-dds-463556504?lid=463556504', 'business name': ['Dr. Bonnie K Krystal, DDS'], 'street': '1803 W Sunset Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90026', 'phone': '(213) 484-9063', 'accepted insurance': 'Dr. Bonnie K Krystal, DDS has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/ernest-t-nagamatsu-dds-11116323?lid=11116323> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/ernest-t-nagamatsu-dds-11116323?lid=11116323>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/ernest-t-nagamatsu-dds-11116323?lid=11116323', 'business name': ['Ernest T Nagamatsu DDS'], 'street': '1655 Hillhurst Ave Ste 101, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90027', 'phone': '(323) 660-8088', 'accepted insurance': 'Ernest T Nagamatsu DDS has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/john-kim-other-22215325?lid=22215325> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/dr-naghmeh-navizadeh-470904078?lid=470904078> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/randy-chen-dds-14832811?lid=14832811> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/soler-myriam-s-dds-479218341?lid=479218341> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/professional-dental-care-3631034?lid=3631034> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/john-kim-other-22215325?lid=22215325>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/john-kim-other-22215325?lid=22215325', 'business name': ['John Kim, Other'], 'street': '2805 S San Pedro St, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90011', 'phone': '(323) 846-8443', 'accepted insurance': 'John Kim, Other has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/dr-naghmeh-navizadeh-470904078?lid=470904078>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/dr-naghmeh-navizadeh-470904078?lid=470904078', 'business name': ['Dr. Naghmeh Navizadeh'], 'street': '10884 Santa Monica Blvd Ste 401, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90025', 'phone': '(310) 446-4410', 'accepted insurance': None}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/randy-chen-dds-14832811?lid=14832811>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/randy-chen-dds-14832811?lid=14832811', 'business name': ['Randy Chen DDS'], 'street': '4857 Huntington Dr N, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90032', 'phone': '(323) 227-4615', 'accepted insurance': None}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/soler-myriam-s-dds-479218341?lid=479218341>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/soler-myriam-s-dds-479218341?lid=479218341', 'business name': ['Soler, Myriam S, DDS'], 'street': '3127 Los Feliz Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90039', 'phone': '(323) 662-3179', 'accepted insurance': None}
+2018-02-26 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/professional-dental-care-3631034?lid=3631034>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/professional-dental-care-3631034?lid=3631034', 'business name': ['Professional Dental Care'], 'street': '201 S Alvarado St Ste 402, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90057', 'phone': '(213) 484-2919', 'accepted insurance': 'Professional Dental Care has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/c-beal-dr-dmd-462579398?lid=462579398> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/bingham-cheryl-dds-15422192?lid=15422192> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/jabeen-mah-khan-dds-inc-468114105?lid=468114105> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/c-beal-dr-dmd-462579398?lid=462579398>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/c-beal-dr-dmd-462579398?lid=462579398', 'business name': ['C Beal DR DMD'], 'street': '5838 Overhill Dr, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90043', 'phone': '(323) 292-2505', 'accepted insurance': 'C Beal DR DMD has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/bingham-cheryl-dds-15422192?lid=15422192>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/bingham-cheryl-dds-15422192?lid=15422192', 'business name': ['Bingham Cheryl DDS'], 'street': '11905 S Central Ave Ste 203, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90059', 'phone': '(323) 564-7504', 'accepted insurance': None}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/edward-lopez-19419617?lid=19419617> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/jabeen-mah-khan-dds-inc-468114105?lid=468114105>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/jabeen-mah-khan-dds-inc-468114105?lid=468114105', 'business name': ['Jabeen Mah Khan DDS Inc'], 'street': '643 W Manchester Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90044', 'phone': '(323) 753-0030', 'accepted insurance': 'Jabeen Mah Khan DDS Inc has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/crenshaw-professional-dental-center-3728235?lid=3728235> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/edward-lopez-19419617?lid=19419617>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/edward-lopez-19419617?lid=19419617', 'business name': ['Edward Lopez'], 'street': '2033 E Florence Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90001', 'phone': '(323) 583-8896', 'accepted insurance': 'Edward Lopez has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/crenshaw-professional-dental-center-3728235?lid=3728235>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/crenshaw-professional-dental-center-3728235?lid=3728235', 'business name': ['Crenshaw Professional Dental Center'], 'street': '3015 Crenshaw Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90016', 'phone': '(323) 731-0801', 'accepted insurance': 'Crenshaw Professional Dental Center has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/kids-dental-kare-458762338?lid=458762338> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/kevin-barrett-dds-7058095?lid=7058095> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/kids-dental-kare-458762338?lid=458762338>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/kids-dental-kare-458762338?lid=458762338', 'business name': ['Kids Dental Kare'], 'street': '4905 Hollywood Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90027', 'phone': '(323) 461-9942', 'accepted insurance': 'Kids Dental Kare has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/jose-tolentino-sauz-dmd-5869266?lid=5869266> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/mohammed-navid-mapara-dmd-473320419?lid=473320419> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/kevin-barrett-dds-7058095?lid=7058095>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/kevin-barrett-dds-7058095?lid=7058095', 'business name': ['Kevin Barrett DDS'], 'street': '11980 San Vicente Blvd Ste 802, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90049', 'phone': '(310) 820-4952', 'accepted insurance': 'Kevin Barrett DDS has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/jose-tolentino-sauz-dmd-5869266?lid=5869266>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/jose-tolentino-sauz-dmd-5869266?lid=5869266', 'business name': ['Jose Tolentino Sauz, DMD'], 'street': '2116 Beverly Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90057', 'phone': '(213) 483-8754', 'accepted insurance': 'Jose Tolentino Sauz, DMD has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/west-la-dental-3272910?lid=3272910> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/mohammed-navid-mapara-dmd-473320419?lid=473320419>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/mohammed-navid-mapara-dmd-473320419?lid=473320419', 'business name': ['Mohammed Navid Mapara, DMD'], 'street': '5814 Rodeo Rd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90016', 'phone': '(310) 836-7200', 'accepted insurance': None}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/lim-george-d-dmd-22018626?lid=22018626> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/los-angeles-endodontic-implant-specialists-478598227?lid=478598227> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/west-la-dental-3272910?lid=3272910>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/west-la-dental-3272910?lid=3272910', 'business name': ['West LA Dental'], 'street': '12340 Santa Monica Blvd Ste 241, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90025', 'phone': '(310) 820-7010', 'accepted insurance': 'West LA Dental has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/lim-george-d-dmd-22018626?lid=22018626>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/lim-george-d-dmd-22018626?lid=22018626', 'business name': ['Lim, George D., DMD'], 'street': '401 S Fairfax Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90036', 'phone': '(323) 951-0814', 'accepted insurance': 'Lim, George D., DMD has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/children-adults-dental-office-276149?lid=276149> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/sunset-family-dentistry-13886283?lid=13886283> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/los-angeles-endodontic-implant-specialists-478598227?lid=478598227>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/los-angeles-endodontic-implant-specialists-478598227?lid=478598227', 'business name': ['Los Angeles Endodontic & Implant Specialists'], 'street': '1127 Wilshire Blvd Ste 1111, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90017', 'phone': '(213) 250-3465', 'accepted insurance': 'Los Angeles Endodontic & Implant Specialists has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/children-adults-dental-office-276149?lid=276149>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/children-adults-dental-office-276149?lid=276149', 'business name': ["Children & Adult's Dental Office"], 'street': '643 W Manchester AVE, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90044', 'phone': '(323) 753-0030', 'accepted insurance': "Children & Adult's Dental Office has not yet specified accepted insurance plans."}
+2018-02-26 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/sunset-family-dentistry-13886283?lid=13886283>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/sunset-family-dentistry-13886283?lid=13886283', 'business name': ['Sunset Family Dentistry'], 'street': '2613 W Sunset Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90026', 'phone': '(213) 484-1845', 'accepted insurance': None}
+2018-02-26 16:19:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/carlston-dean-l-d-d-s-455033138?lid=455033138> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/delmont-michael-dds-470046121?lid=470046121> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/carlston-dean-l-d-d-s-455033138?lid=455033138>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/carlston-dean-l-d-d-s-455033138?lid=455033138', 'business name': ['Carlston, Dean L., D.D.S.'], 'street': '2472 Overland Ave, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90064', 'phone': '(310) 838-0844', 'accepted insurance': 'Carlston, Dean L., D.D.S. has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/delmont-michael-dds-470046121?lid=470046121>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/delmont-michael-dds-470046121?lid=470046121', 'business name': ['Delmont Michael DDS'], 'street': '8635 W 3rd St Ste 580, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90048', 'phone': '(310) 652-7742', 'accepted insurance': 'Delmont Michael DDS has not yet specified accepted insurance plans.'}
+2018-02-26 16:19:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yellowpages.com/los-angeles-ca/mip/fernando-dr-barreto-dds-13694320?lid=13694320> (referer: https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=2)
+2018-02-26 16:19:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yellowpages.com/los-angeles-ca/mip/fernando-dr-barreto-dds-13694320?lid=13694320>
+{'yp listing url': 'https://www.yellowpages.com/los-angeles-ca/mip/fernando-dr-barreto-dds-13694320?lid=13694320', 'business name': ['Fernando DR Barreto DDS'], 'street': '1612 W Sunset Blvd, ', 'city': 'Los Angeles, ', 'state': 'CA ', 'zip': '90026', 'phone': '(213) 250-3767', 'accepted insurance': None}
+2018-02-26 16:19:09 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-26 16:19:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 24980,
+ 'downloader/request_count': 31,
+ 'downloader/request_method_count/GET': 31,
+ 'downloader/response_bytes': 1187312,
+ 'downloader/response_count': 31,
+ 'downloader/response_status_count/200': 31,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 27, 0, 19, 9, 473429),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 7,
+ 'memusage/max': 47079424,
+ 'memusage/startup': 47079424,
+ 'request_depth_max': 1,
+ 'response_received_count': 31,
+ 'scheduler/dequeued': 31,
+ 'scheduler/dequeued/memory': 31,
+ 'scheduler/enqueued': 31,
+ 'scheduler/enqueued/memory': 31,
+ 'start_time': datetime.datetime(2018, 2, 27, 0, 19, 3, 318999)}
+2018-02-26 16:19:09 [scrapy.core.engine] INFO: Spider closed (finished)
