@@ -13,7 +13,7 @@ class YpDentistsSpiderSpider(scrapy.Spider):
 
 
     def start_requests(self):
-        url = 'https://www.yellowpages.com/search?search_terms=dentist&geo_location_terms=Los%20Angeles%2C%20CA&page=' + str(self.page_id)
+        url = 'https://www.yellowpages.com/search?search_terms=salon&geo_location_terms=Los%20Angeles%2C%20CA&page=' + str(self.page_id)
         yield scrapy.Request(url=url, callback=self.parse_results)
 
     def parse_results(self, response):
@@ -43,5 +43,6 @@ class YpDentistsSpiderSpider(scrapy.Spider):
             'phone': response.xpath('//p[@class="phone"]/text()').extract_first(),
             'accepted insurance': response.xpath('//article[@id="accepted-insurance"]/p/text()').extract_first(),
             'extra': response.xpath('//dd[@class="other-information"]/p/text()').extract(),
+            'email': response.xpath('//a[@class="email-business"]/@href').extract()
             # 'image': response.xpath('//a[@class="media-thumbnail"]/img/@src').extract_first(),
         }

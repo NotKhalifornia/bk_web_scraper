@@ -10,16 +10,17 @@ class WebScraperPipeline(object):
     def process_item(self, item, spider):
 
 
-        conn = psycopg2.connect(host="localhost", database="sol", user="ryangedwill")
+        conn = psycopg2.connect(host="localhost", database="gedwillsite", user="postgres", password="pwd_5065yj")
         cur = conn.cursor()
 
         query = """
-        INSERT INTO directories_dentist(name, yp_street_address, yp_city, yp_state, yp_zip_code, yp_url, insurance, yp_extra_info, phone)
-        VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO _leads(name, yp_email, yp_street_address, yp_city, yp_state, yp_zip_code, yp_url, insurance, yp_extra_info, phone)
+        VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """
 
         data = (
             str(item['business name']).lstrip("[\'").rstrip("\']"),
+            item['email'],
             item['street'],
             item['city'],
             item['state'],
