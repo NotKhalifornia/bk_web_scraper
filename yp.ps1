@@ -1,3 +1,3 @@
-For($i=0; $i -le 15; $i++) {
+For($i=20; $i -le 25; $i++) {
     scrapy crawl yp_dentists_spider -a page_id=$i
 }

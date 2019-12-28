@@ -10,7 +10,7 @@ class WebScraperPipeline(object):
     def process_item(self, item, spider):
 
 
-        conn = psycopg2.connect(host="localhost", database="gedwillsite", user="postgres", password="pwd_5065yj")
+        conn = psycopg2.connect(host="gsite1.cgxw02iqlb92.us-west-2.rds.amazonaws.com", database="postgres", user="postgres", password="ryan1234")
         cur = conn.cursor()
 
         query = """
