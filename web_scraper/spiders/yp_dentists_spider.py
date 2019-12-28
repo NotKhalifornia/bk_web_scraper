@@ -13,7 +13,8 @@ class YpDentistsSpiderSpider(scrapy.Spider):
 
 
     def start_requests(self):
-        url = 'https://www.yellowpages.com/search?search_terms=restaurant&geo_location_terms=San%20Jose%2C%20CA&page=' + str(self.page_id)
+        # url = 'https://www.yellowpages.com/search?search_terms=photography&geo_location_terms=San%20Jose%2C%20CA&page=' + str(self.page_id)
+        url = 'https://www.yellowpages.com/search?search_terms=photography&geo_location_terms=Sacramento%2C%20CA&page=' + str(self.page_id)
         yield scrapy.Request(url=url, callback=self.parse_results)
 
     def parse_results(self, response):
