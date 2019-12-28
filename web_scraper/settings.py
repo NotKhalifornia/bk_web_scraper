@@ -64,10 +64,10 @@ DOWNLOAD_DELAY = 0
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    # 'scrapy.pipelines.images.ImagesPipeline': 1,
-#    'web_scraper.pipelines.WebScraperPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   # 'scrapy.pipelines.images.ImagesPipeline': 1,
+   'web_scraper.pipelines.WebScraperPipeline': 300,
+}
 
 
 # IMAGES_STORE = '/Users/ryangedwill/codez/sol/web_scraper/scraped_images'
