@@ -14,8 +14,8 @@ class WebScraperPipeline(object):
         cur = conn.cursor()
 
         query = """
-        INSERT INTO _leads(name, yp_email, yp_street_address, yp_city, yp_state, yp_zip_code, yp_url, insurance, yp_extra_info, phone)
-        VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO _leads(name, yp_email, yp_street_address, yp_city, yp_state, yp_zip_code, yp_url, insurance, yp_extra_info, phone, search_terms)
+        VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """
 
         data = (
@@ -29,7 +29,8 @@ class WebScraperPipeline(object):
             str(item["yp listing url"]),
             item['accepted insurance'],
             item['extra'],
-            item['phone']
+            item['phone'],
+            item['search terms']
         )
 
         cur.execute(query, data)
