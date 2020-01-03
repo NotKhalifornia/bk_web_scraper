@@ -13,7 +13,7 @@ class YpDentistsSpiderSpider(scrapy.Spider):
         self.page_id = page_id
         # self.location = location
         # self.search_terms = search_terms
-        self.location = "Springfield"
+        self.location = "Aurora"
         self.search_terms = "Photography"
 
     def start_requests(self):
