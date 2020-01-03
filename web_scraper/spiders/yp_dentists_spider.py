@@ -8,11 +8,13 @@ class YpDentistsSpiderSpider(scrapy.Spider):
     # location = 'Oakland'
     name = 'yp_dentists_spider'
     # allowed_domains = ['yp.com']
-    def __init__(self, page_id, location, search_terms, *args, **kwargs):
+    def __init__(self, page_id, location="Chicago", search_terms="photography", *args, **kwargs):
         super(YpDentistsSpiderSpider, self).__init__(*args, **kwargs)
         self.page_id = page_id
-        self.location = location
-        self.search_terms = search_terms
+        # self.location = location
+        # self.search_terms = search_terms
+        self.location = "Chicago"
+        self.search_terms = "Photography"
 
     def start_requests(self):
         # url = 'https://www.yellowpages.com/search?search_terms=photography&geo_location_terms=San%20Jose%2C%20CA&page=' + str(self.page_id)
